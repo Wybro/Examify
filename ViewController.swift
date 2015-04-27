@@ -32,6 +32,16 @@ class ViewController: UIViewController, UITableViewDataSource {
         animateTable()
     }
     
+    
+    @IBAction func moreInfo(sender: AnyObject) {
+        let alert = UIAlertView()
+        alert.title = "Getting Started"
+        alert.message = "Add a new course by tapping the button in the top right corner."
+        alert.addButtonWithTitle("Got it!")
+        alert.show()
+    }
+    
+    
     func animateTable() {
         courseTableView.reloadData()
         
